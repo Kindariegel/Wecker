@@ -1,12 +1,19 @@
 ﻿<Window x:Class="Wecker.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Wecker"
-        mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="350" Width="800">
     <Grid>
-        
+        <ListBox Height="144" HorizontalAlignment="Left" Margin="22,28,0,0" Name="listBoxMeetings" VerticalAlignment="Top" Width="236" />
+        <Button Name="buttonadd" Content="Termin hinzufügen" HorizontalAlignment="Left" Margin="280,209,0,0" VerticalAlignment="Top" Width="236" Click="Buttonadd_Click" />
+        <Button Name="buttondel" Content="Termin löschen" HorizontalAlignment="Left" Margin="22,209,0,0" VerticalAlignment="Top" Width="236" Click="Buttondel_Click" />
+        <TextBox Name="textboxtitle" HorizontalAlignment="Left" Height="23" Margin="280,71,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="236"/>
+        <TextBox Name="textboxhours" HorizontalAlignment="Left" Height="23" Margin="280,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
+        <TextBox Name="textboxminutes" HorizontalAlignment="Left" Height="23" Margin="416,142,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
+        <Label Content="Titel Meeting" HorizontalAlignment="Left" Height="31" Margin="280,30,0,0" VerticalAlignment="Top" Width="272"/>
+        <Label Content="Stunden" HorizontalAlignment="Left" Height="24" Margin="280,113,0,0" VerticalAlignment="Top" Width="100"/>
+        <Label Content="Minuten" HorizontalAlignment="Left" Height="24" Margin="416,113,0,0" VerticalAlignment="Top" Width="102"/>
+        <RadioButton Content="Farbe" HorizontalAlignment="Left" Margin="280,180,0,0" VerticalAlignment="Top" IsChecked="True" Name="radioButtonColor" />
+        <RadioButton Content="Sound" HorizontalAlignment="Left" Margin="416,180,0,0" VerticalAlignment="Top" Name="radioButtonSound" />
+
     </Grid>
 </Window>
